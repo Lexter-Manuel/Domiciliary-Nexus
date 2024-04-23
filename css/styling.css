@@ -1,0 +1,75 @@
+:root {
+    --mainblue: #597ec3;
+    --darkText: #000;
+    --lighText: white;
+    --darkerblue: #141c2d;
+}
+
+th {
+    background-color: var(--mainblue);
+}
+ 
+ .modal-toggle {
+    cursor: pointer;
+    color: #268bd2;
+ }
+ .modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+ 
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+    opacity: 0;
+ 
+    -webkit-transition: opacity 0.2s ease-in;
+    -moz-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+ 
+    pointer-events: auto;
+ }
+ 
+ .modal-wrapper > div {
+    width: 460px;
+    height: 40%;
+    position: absolute;
+ 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+ 
+    margin: auto;
+ 
+    vertical-align: middle;
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    z-index: 1;
+ }
+ 
+ .close {
+    background: #606061;
+    color: #ffffff;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+ }
+ 
+ .close:hover {
+    background: #00d9ff;
+ }
+ 
+ option {
+    color: var(--darkText);
+ }
